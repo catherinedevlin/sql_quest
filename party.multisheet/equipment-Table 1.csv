@@ -1,0 +1,15 @@
+name,quantity,weight each,cost,magic,materials,notes,owner
+shield,1,10,7,,"wood, cloth",,Aelfryth
+battleaxe,1,7,5,+1,"wood, iron",,Godric
+Oil of Revelation,1,1,50,Y,"oil, spices","Burned in any lamp, its light reveals all illusions, disguises, invisible",Leofflaed
+cudgel,1,3,0.1,,wood,,Wigstan
+Tent,1,15,4,,cloth,sleeps 4,Aelfryth
+30’ rope,1,10,0.1,,hemp,,Godric
+Unfailing Flint,1,0.1,500,Y,stone,Immediately ignites in any weather,Leofflaed
+cookpot,1,10,0.3,,iron,,Wigstan
+bow,1,2,30,,wood,,Aelfryth
+torches,6,2,0.02,,wood,,Godric
+lamp,1,0.2,0.5,,clay,,Leofflaed
+dagger,1,1,2,,iron,,Wigstan
+arrows,12,0.1,0.1,,"wood, iron",,Aelfryth
+torches,3,2,0.02,,wood,,Wigstan

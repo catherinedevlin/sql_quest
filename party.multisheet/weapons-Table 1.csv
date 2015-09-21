@@ -1,0 +1,8 @@
+name,damage,materials,belongs to
+sword,d8,iron,Aelfryth
+bow,d6,wood,Aelfryth
+battleaxe,d8,"iron, wood",Ethelred
+dagger,d4,iron,Ethelred
+staff,d6,wood,Imitrex
+cudgel,d6,wood,Xanax
+knife,d4,iron,Xanax
