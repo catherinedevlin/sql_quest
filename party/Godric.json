@@ -1,0 +1,48 @@
+{
+  "class": "Fighter",
+  "role": "Warband Member",
+  "level": 4,
+  "equipment": {
+    "torches": {
+      "quantity": 6,
+      "materials": [
+        "wood"
+      ],
+      "weight each": 2.0,
+      "magic": "",
+      "notes": "",
+      "cost": 2.0
+    },
+    "30\u2019 rope": {
+      "quantity": 1,
+      "materials": [
+        "hemp"
+      ],
+      "weight each": 10.0,
+      "magic": "",
+      "notes": "",
+      "cost": 10.0
+    },
+    "battleaxe": {
+      "quantity": 1,
+      "materials": [
+        "wood",
+        "iron"
+      ],
+      "weight each": 7.0,
+      "magic": "+1",
+      "notes": "",
+      "cost": 7.0,
+      "damage": "d8"
+    }
+  },
+  "name": "Godric",
+  "stats": {
+    "dexterity": 11,
+    "charisma": 12,
+    "strength": 17,
+    "wisdom": 7,
+    "intelligence": 9,
+    "constitution": 16
+  }
+}

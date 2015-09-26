@@ -1,0 +1,58 @@
+{
+  "class": "Thief",
+  "role": "Runaway Thrall",
+  "level": 3,
+  "equipment": {
+    "torches": {
+      "quantity": 3,
+      "materials": [
+        "wood"
+      ],
+      "weight each": 2.0,
+      "magic": "",
+      "notes": "",
+      "cost": 2.0
+    },
+    "cudgel": {
+      "quantity": 1,
+      "materials": [
+        "wood"
+      ],
+      "weight each": 3.0,
+      "magic": "",
+      "notes": "",
+      "cost": 3.0,
+      "damage": "d6"
+    },
+    "cookpot": {
+      "quantity": 1,
+      "materials": [
+        "iron"
+      ],
+      "weight each": 10.0,
+      "magic": "",
+      "notes": "",
+      "cost": 10.0
+    },
+    "dagger": {
+      "quantity": 1,
+      "materials": [
+        "iron"
+      ],
+      "weight each": 1.0,
+      "magic": "",
+      "notes": "",
+      "cost": 1.0,
+      "damage": "d4"
+    }
+  },
+  "name": "Wigstan",
+  "stats": {
+    "dexterity": 15,
+    "charisma": 10,
+    "strength": 14,
+    "wisdom": 9,
+    "intelligence": 12,
+    "constitution": 14
+  }
+}

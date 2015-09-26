@@ -1,0 +1,59 @@
+{
+  "class": "Fighter",
+  "role": "Thane",
+  "level": 5,
+  "equipment": {
+    "bow": {
+      "quantity": 1,
+      "materials": [
+        "wood"
+      ],
+      "weight each": 2.0,
+      "magic": "",
+      "notes": "",
+      "cost": 2.0,
+      "damage": "d6"
+    },
+    "Tent": {
+      "quantity": 1,
+      "materials": [
+        "cloth"
+      ],
+      "weight each": 15.0,
+      "magic": "",
+      "notes": "sleeps 4",
+      "cost": 15.0
+    },
+    "shield": {
+      "quantity": 1,
+      "materials": [
+        "wood",
+        "cloth"
+      ],
+      "weight each": 10.0,
+      "magic": "",
+      "notes": "",
+      "cost": 10.0
+    },
+    "arrows": {
+      "quantity": 12,
+      "materials": [
+        "wood",
+        "iron"
+      ],
+      "weight each": 0.1,
+      "magic": "",
+      "notes": "",
+      "cost": 0.1
+    }
+  },
+  "name": "Aelfryth",
+  "stats": {
+    "dexterity": 15,
+    "charisma": 14,
+    "strength": 16,
+    "wisdom": 14,
+    "intelligence": 11,
+    "constitution": 15
+  }
+}

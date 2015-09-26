@@ -1,0 +1,47 @@
+{
+  "class": "Sourceror",
+  "role": "Enigma",
+  "level": 5,
+  "equipment": {
+    "Unfailing Flint": {
+      "quantity": 1,
+      "materials": [
+        "stone"
+      ],
+      "weight each": 0.1,
+      "magic": "Y",
+      "notes": "Immediately ignites in any weather",
+      "cost": 0.1
+    },
+    "lamp": {
+      "quantity": 1,
+      "materials": [
+        "clay"
+      ],
+      "weight each": 0.2,
+      "magic": "",
+      "notes": "",
+      "cost": 0.2
+    },
+    "Oil of Revelation": {
+      "quantity": 1,
+      "materials": [
+        "oil",
+        "spices"
+      ],
+      "weight each": 1.0,
+      "magic": "Y",
+      "notes": "Burned in any lamp, its light reveals all illusions, disguises, invisible",
+      "cost": 1.0
+    }
+  },
+  "name": "Leofflaed",
+  "stats": {
+    "dexterity": 14,
+    "charisma": 11,
+    "strength": 8,
+    "wisdom": 11,
+    "intelligence": 17,
+    "constitution": 12
+  }
+}
