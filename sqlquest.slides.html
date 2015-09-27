@@ -223,8 +223,10 @@ div.output_prompt {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="SQLQuest">SQLQuest<a class="anchor-link" href="#SQLQuest">&#182;</a></h1><p>Catherine Devlin
-Ohio LinuxFest 2015</p>
+<h1 id="SQLQuest">SQLQuest<a class="anchor-link" href="#SQLQuest">&#182;</a></h1><p>Catherine Devlin</p>
+<p>Ohio LinuxFest 2015</p>
+<p><a href="https://github.com/catherinedevlin/sql_quest">https://github.com/catherinedevlin/sql_quest</a></p>
+<p><img src="img/knights.jpg" alt="knights"></p>
 
 </div>
 </div>
@@ -242,6 +244,7 @@ Ohio LinuxFest 2015</p>
 <li>Advanced: JSON</li>
 <li>Expert: Relational</li>
 </ul>
+<p><img src="img/monster_duel.jpg" alt="duel with monster"></p>
 
 </div>
 </div>
@@ -254,7 +257,7 @@ Ohio LinuxFest 2015</p>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="In-the-beginning...">In the beginning...<a class="anchor-link" href="#In-the-beginning...">&#182;</a></h1><p>... there was the Character Sheet</p>
+<h1 id="In-the-beginning...">In the beginning...<a class="anchor-link" href="#In-the-beginning...">&#182;</a></h1><p><img src="img/charsheet.png" alt="D&amp;D character sheet"></p>
 
 </div>
 </div>
@@ -267,31 +270,18 @@ Ohio LinuxFest 2015</p>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Into-Electronica">Into Electronica<a class="anchor-link" href="#Into-Electronica">&#182;</a></h1><p>Word processing document?</p>
-<p>All but unreadable electronically</p>
+<h1 id="Into-Electronica">Into Electronica<a class="anchor-link" href="#Into-Electronica">&#182;</a></h1><p>All but useless ectronically</p>
 
 </div>
 </div>
-</div></section>
-    </section><section>
-    <section>
-    
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="CSV">CSV<a class="anchor-link" href="#CSV">&#182;</a></h1>
-</div>
-</div>
-</div><div class="fragment" data-fragment-index="5">
+</div><div class="fragment" data-fragment-index="4">
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="o">!</span>open party.numbers
+<div class=" highlight hl-ipython3"><pre><span class="o">!</span>libreoffice data/aelfryth.odt
 </pre></div>
 
 </div>
@@ -303,14 +293,59 @@ Ohio LinuxFest 2015</p>
     </section><section>
     <section>
     
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="CSV">CSV<a class="anchor-link" href="#CSV">&#182;</a></h1>
+</div>
+</div>
+</div><div class="fragment" data-fragment-index="6">
+    
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span class="o">!</span>libreoffice data/party.ods
+<span class="o">!</span>cat data/party.csv
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>
+
+
+
+Wigstan,Thief,Runaway thrall,3,14,12,9,15,14,10,cudgel,1,3,0.1,,wood,,cookpot,1,10,0.3,,iron,,dagger,1,1,2,,iron,,torches,3,2,0.02,,wood,</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    </div></section>
+    </section><section>
+    <section>
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span class="kn">from</span> <span class="nn">csv</span> <span class="k">import</span> <span class="n">DictReader</span>
 <span class="kn">from</span> <span class="nn">pprint</span> <span class="k">import</span> <span class="n">pprint</span>
-<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s">&#39;party.csv&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">infile</span><span class="p">:</span>
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s">&#39;data/party.csv&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">infile</span><span class="p">:</span>
     <span class="n">party</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">DictReader</span><span class="p">(</span><span class="n">infile</span><span class="p">))</span>
     
 <span class="n">pprint</span><span class="p">(</span><span class="n">party</span><span class="p">)</span>
@@ -499,11 +534,11 @@ Ohio LinuxFest 2015</p>
 
 </div>
 </div>
-</div><div class="fragment" data-fragment-index="8">
+</div><div class="fragment" data-fragment-index="9">
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span class="n">total_weight</span> <span class="o">=</span> <span class="mi">0</span>
@@ -547,10 +582,11 @@ Ohio LinuxFest 2015</p>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Ouch">Ouch<a class="anchor-link" href="#Ouch">&#182;</a></h1><ul>
+<h1 id="Save-vs.-Confusion">Save vs. Confusion<a class="anchor-link" href="#Save-vs.-Confusion">&#182;</a></h1><ul>
 <li>custom program</li>
 <li>hardcoded number of equipment slots</li>
 </ul>
+<p><img src="img/lost.jpg" alt="lost"></p>
 
 </div>
 </div>
@@ -566,14 +602,14 @@ Ohio LinuxFest 2015</p>
 <h1 id="Relational-(from-CSV)">Relational (from CSV)<a class="anchor-link" href="#Relational-(from-CSV)">&#182;</a></h1>
 </div>
 </div>
-</div><div class="fragment" data-fragment-index="11">
+</div><div class="fragment" data-fragment-index="12">
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="o">!</span>open party.multisheet.numbers
+<div class=" highlight hl-ipython3"><pre><span class="o">!</span>libreoffice data/party.multisheet.ods
 </pre></div>
 
 </div>
@@ -587,14 +623,14 @@ Ohio LinuxFest 2015</p>
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span class="kn">from</span> <span class="nn">csv</span> <span class="k">import</span> <span class="n">DictReader</span>
 <span class="kn">from</span> <span class="nn">pprint</span> <span class="k">import</span> <span class="n">pprint</span>
-<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s">&#39;party.multisheet/stats-Table 1.csv&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">infile</span><span class="p">:</span>
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s">&#39;data/party.multisheet/stats-Table 1.csv&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">infile</span><span class="p">:</span>
     <span class="n">stats</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">DictReader</span><span class="p">(</span><span class="n">infile</span><span class="p">))</span>
-<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s">&#39;party.multisheet/equipment-Table 1.csv&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">infile</span><span class="p">:</span>
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s">&#39;data/party.multisheet/equipment-Table 1.csv&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">infile</span><span class="p">:</span>
     <span class="n">equipment</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">DictReader</span><span class="p">(</span><span class="n">infile</span><span class="p">))</span>
 <span class="n">pprint</span><span class="p">(</span><span class="n">stats</span><span class="p">)</span>
 </pre></div>
@@ -662,7 +698,7 @@ Ohio LinuxFest 2015</p>
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[18]:</div>
+<div class="prompt input_prompt">In&nbsp;[24]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span class="n">total_weight</span> <span class="o">=</span> <span class="mi">0</span>
@@ -706,7 +742,8 @@ Ohio LinuxFest 2015</p>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Still-ouch">Still ouch<a class="anchor-link" href="#Still-ouch">&#182;</a></h1>
+<h1 id="Still-ouch">Still ouch<a class="anchor-link" href="#Still-ouch">&#182;</a></h1><p><img src="img/ouch.jpg" alt="pained face"></p>
+
 </div>
 </div>
 </div></section>
@@ -722,14 +759,14 @@ Ohio LinuxFest 2015</p>
 
 </div>
 </div>
-</div><div class="fragment" data-fragment-index="16">
+</div><div class="fragment" data-fragment-index="17">
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[36]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="o">!</span>cat party.json
+<div class=" highlight hl-ipython3"><pre><span class="o">!</span>cat data/party.json
 </pre></div>
 
 </div>
@@ -976,11 +1013,11 @@ Ohio LinuxFest 2015</p>
 
 </div>
 </div>
-</div><div class="fragment" data-fragment-index="18">
+</div><div class="fragment" data-fragment-index="19">
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[37]:</div>
+<div class="prompt input_prompt">In&nbsp;[26]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span class="kn">import</span> <span class="nn">json</span>
@@ -1025,15 +1062,15 @@ Ohio LinuxFest 2015</p>
 <h1 id="Consistency">Consistency<a class="anchor-link" href="#Consistency">&#182;</a></h1>
 </div>
 </div>
-</div><div class="fragment" data-fragment-index="20">
+</div><div class="fragment" data-fragment-index="21">
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[70]:</div>
+<div class="prompt input_prompt">In&nbsp;[45]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span class="n">party</span><span class="o">.</span><span class="n">append</span><span class="p">(</span> <span class="p">{</span><span class="s">&#39;name&#39;</span><span class="p">:</span> <span class="s">&#39;Mickey&#39;</span><span class="p">,</span>
-               <span class="s">&#39;class&#39;</span><span class="p">:</span> <span class="s">&#39;Druid/Fighter/Illusionist/Assassin&#39;</span><span class="p">,</span>
+               <span class="s">&#39;class&#39;</span><span class="p">:</span> <span class="s">&#39;Druid/Gunslinger/Paladin/Illusionist/Assassin&#39;</span><span class="p">,</span>
                <span class="s">&#39;level&#39;</span><span class="p">:</span> <span class="mi">87</span><span class="p">,</span>
                <span class="s">&#39;psionic level&#39;</span><span class="p">:</span> <span class="mi">19</span><span class="p">}</span> <span class="p">)</span>
 </pre></div>
@@ -1042,6 +1079,18 @@ Ohio LinuxFest 2015</p>
 </div>
 </div>
 
+</div>
+    </div><div class="fragment" data-fragment-index="22">
+    
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Schema enforcement: kwalify, marshmallow, ...</p>
+
+</div>
+</div>
 </div>
     </div></section>
     </section><section>
@@ -1052,13 +1101,21 @@ Ohio LinuxFest 2015</p>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Scaling-JSON:-document-databases">Scaling JSON: document databases<a class="anchor-link" href="#Scaling-JSON:-document-databases">&#182;</a></h1>
+<h1 id="Scaling">Scaling<a class="anchor-link" href="#Scaling">&#182;</a></h1><ul>
+<li>Multiple access</li>
+</ul>
+<h2 id="Document-databases">Document databases<a class="anchor-link" href="#Document-databases">&#182;</a></h2><ul>
+<li>Mongo</li>
+<li></li>
+</ul>
+
 </div>
 </div>
-</div>
+</div><aside class="notes">
+    
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[46]:</div>
+<div class="prompt input_prompt">In&nbsp;[28]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span class="o">!</span><span class="nb">echo</span> <span class="s2">&quot;db.party.drop()&quot;</span> <span class="p">|</span> mongo
@@ -1085,13 +1142,14 @@ bye
 </div>
 </div>
 
-</div></section>
+</div>
+    </aside></section>
     </section><section>
     <section>
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[47]:</div>
+<div class="prompt input_prompt">In&nbsp;[29]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span class="o">!</span>mongoimport --collection party --jsonArray party.json
@@ -1108,7 +1166,7 @@ bye
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>connected to: 127.0.0.1
-2015-09-20T21:54:45.087-0400 imported 4 objects
+2015-09-25T19:23:17.661-0400 imported 4 objects
 </pre>
 </div>
 </div>
@@ -1116,11 +1174,11 @@ bye
 </div>
 </div>
 
-</div><div class="fragment" data-fragment-index="24">
+</div><div class="fragment" data-fragment-index="26">
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[48]:</div>
+<div class="prompt input_prompt">In&nbsp;[30]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span class="o">!</span><span class="nb">echo</span> <span class="s2">&quot;db.party.find()&quot;</span> <span class="p">|</span> mongo
@@ -1138,10 +1196,10 @@ bye
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>MongoDB shell version: 2.6.3
 connecting to: test
-{ &quot;_id&quot; : ObjectId(&quot;55ff6365b0360e7b0af83c53&quot;), &quot;class&quot; : &quot;Thief&quot;, &quot;role&quot; : &quot;Runaway Thrall&quot;, &quot;level&quot; : 3, &quot;equipment&quot; : { &quot;torches&quot; : { &quot;quantity&quot; : 3, &quot;materials&quot; : [ &quot;wood&quot; ], &quot;weight each&quot; : 2, &quot;magic&quot; : &quot;&quot;, &quot;notes&quot; : &quot;&quot;, &quot;cost&quot; : 2 }, &quot;cudgel&quot; : { &quot;quantity&quot; : 1, &quot;materials&quot; : [ &quot;wood&quot; ], &quot;weight each&quot; : 3, &quot;magic&quot; : &quot;&quot;, &quot;notes&quot; : &quot;&quot;, &quot;cost&quot; : 3, &quot;damage&quot; : &quot;d6&quot; }, &quot;cookpot&quot; : { &quot;quantity&quot; : 1, &quot;materials&quot; : [ &quot;iron&quot; ], &quot;weight each&quot; : 10, &quot;magic&quot; : &quot;&quot;, &quot;notes&quot; : &quot;&quot;, &quot;cost&quot; : 10 }, &quot;dagger&quot; : { &quot;quantity&quot; : 1, &quot;materials&quot; : [ &quot;iron&quot; ], &quot;weight each&quot; : 1, &quot;magic&quot; : &quot;&quot;, &quot;notes&quot; : &quot;&quot;, &quot;cost&quot; : 1, &quot;damage&quot; : &quot;d4&quot; } }, &quot;name&quot; : &quot;Wigstan&quot;, &quot;stats&quot; : { &quot;dexterity&quot; : 15, &quot;charisma&quot; : 10, &quot;strength&quot; : 14, &quot;wisdom&quot; : 9, &quot;intelligence&quot; : 12, &quot;constitution&quot; : 14 } }
-{ &quot;_id&quot; : ObjectId(&quot;55ff6365b0360e7b0af83c54&quot;), &quot;class&quot; : &quot;Fighter&quot;, &quot;role&quot; : &quot;Thane&quot;, &quot;level&quot; : 5, &quot;equipment&quot; : { &quot;bow&quot; : { &quot;quantity&quot; : 1, &quot;materials&quot; : [ &quot;wood&quot; ], &quot;weight each&quot; : 2, &quot;magic&quot; : &quot;&quot;, &quot;notes&quot; : &quot;&quot;, &quot;cost&quot; : 2, &quot;damage&quot; : &quot;d6&quot; }, &quot;Tent&quot; : { &quot;quantity&quot; : 1, &quot;materials&quot; : [ &quot;cloth&quot; ], &quot;weight each&quot; : 15, &quot;magic&quot; : &quot;&quot;, &quot;notes&quot; : &quot;sleeps 4&quot;, &quot;cost&quot; : 15 }, &quot;shield&quot; : { &quot;quantity&quot; : 1, &quot;materials&quot; : [ &quot;wood&quot;, &quot;cloth&quot; ], &quot;weight each&quot; : 10, &quot;magic&quot; : &quot;&quot;, &quot;notes&quot; : &quot;&quot;, &quot;cost&quot; : 10 }, &quot;arrows&quot; : { &quot;quantity&quot; : 12, &quot;materials&quot; : [ &quot;wood&quot;, &quot;iron&quot; ], &quot;weight each&quot; : 0.1, &quot;magic&quot; : &quot;&quot;, &quot;notes&quot; : &quot;&quot;, &quot;cost&quot; : 0.1 } }, &quot;name&quot; : &quot;Aelfryth&quot;, &quot;stats&quot; : { &quot;dexterity&quot; : 15, &quot;charisma&quot; : 14, &quot;strength&quot; : 16, &quot;wisdom&quot; : 14, &quot;intelligence&quot; : 11, &quot;constitution&quot; : 15 } }
-{ &quot;_id&quot; : ObjectId(&quot;55ff6365b0360e7b0af83c55&quot;), &quot;class&quot; : &quot;Sourceror&quot;, &quot;role&quot; : &quot;Enigma&quot;, &quot;level&quot; : 5, &quot;equipment&quot; : { &quot;Unfailing Flint&quot; : { &quot;quantity&quot; : 1, &quot;materials&quot; : [ &quot;stone&quot; ], &quot;weight each&quot; : 0.1, &quot;magic&quot; : &quot;Y&quot;, &quot;notes&quot; : &quot;Immediately ignites in any weather&quot;, &quot;cost&quot; : 0.1 }, &quot;lamp&quot; : { &quot;quantity&quot; : 1, &quot;materials&quot; : [ &quot;clay&quot; ], &quot;weight each&quot; : 0.2, &quot;magic&quot; : &quot;&quot;, &quot;notes&quot; : &quot;&quot;, &quot;cost&quot; : 0.2 }, &quot;Oil of Revelation&quot; : { &quot;quantity&quot; : 1, &quot;materials&quot; : [ &quot;oil&quot;, &quot;spices&quot; ], &quot;weight each&quot; : 1, &quot;magic&quot; : &quot;Y&quot;, &quot;notes&quot; : &quot;Burned in any lamp, its light reveals all illusions, disguises, invisible&quot;, &quot;cost&quot; : 1 } }, &quot;name&quot; : &quot;Leofflaed&quot;, &quot;stats&quot; : { &quot;dexterity&quot; : 14, &quot;charisma&quot; : 11, &quot;strength&quot; : 8, &quot;wisdom&quot; : 11, &quot;intelligence&quot; : 17, &quot;constitution&quot; : 12 } }
-{ &quot;_id&quot; : ObjectId(&quot;55ff6365b0360e7b0af83c56&quot;), &quot;class&quot; : &quot;Fighter&quot;, &quot;role&quot; : &quot;Warband Member&quot;, &quot;level&quot; : 4, &quot;equipment&quot; : { &quot;torches&quot; : { &quot;quantity&quot; : 6, &quot;materials&quot; : [ &quot;wood&quot; ], &quot;weight each&quot; : 2, &quot;magic&quot; : &quot;&quot;, &quot;notes&quot; : &quot;&quot;, &quot;cost&quot; : 2 }, &quot;30’ rope&quot; : { &quot;quantity&quot; : 1, &quot;materials&quot; : [ &quot;hemp&quot; ], &quot;weight each&quot; : 10, &quot;magic&quot; : &quot;&quot;, &quot;notes&quot; : &quot;&quot;, &quot;cost&quot; : 10 }, &quot;battleaxe&quot; : { &quot;quantity&quot; : 1, &quot;materials&quot; : [ &quot;wood&quot;, &quot;iron&quot; ], &quot;weight each&quot; : 7, &quot;magic&quot; : &quot;+1&quot;, &quot;notes&quot; : &quot;&quot;, &quot;cost&quot; : 7, &quot;damage&quot; : &quot;d8&quot; } }, &quot;name&quot; : &quot;Godric&quot;, &quot;stats&quot; : { &quot;dexterity&quot; : 11, &quot;charisma&quot; : 12, &quot;strength&quot; : 17, &quot;wisdom&quot; : 7, &quot;intelligence&quot; : 9, &quot;constitution&quot; : 16 } }
+{ &quot;_id&quot; : ObjectId(&quot;5605d765636c85fac5768a6f&quot;), &quot;class&quot; : &quot;Thief&quot;, &quot;role&quot; : &quot;Runaway Thrall&quot;, &quot;level&quot; : 3, &quot;equipment&quot; : { &quot;torches&quot; : { &quot;quantity&quot; : 3, &quot;materials&quot; : [ &quot;wood&quot; ], &quot;weight each&quot; : 2, &quot;magic&quot; : &quot;&quot;, &quot;notes&quot; : &quot;&quot;, &quot;cost&quot; : 2 }, &quot;cudgel&quot; : { &quot;quantity&quot; : 1, &quot;materials&quot; : [ &quot;wood&quot; ], &quot;weight each&quot; : 3, &quot;magic&quot; : &quot;&quot;, &quot;notes&quot; : &quot;&quot;, &quot;cost&quot; : 3, &quot;damage&quot; : &quot;d6&quot; }, &quot;cookpot&quot; : { &quot;quantity&quot; : 1, &quot;materials&quot; : [ &quot;iron&quot; ], &quot;weight each&quot; : 10, &quot;magic&quot; : &quot;&quot;, &quot;notes&quot; : &quot;&quot;, &quot;cost&quot; : 10 }, &quot;dagger&quot; : { &quot;quantity&quot; : 1, &quot;materials&quot; : [ &quot;iron&quot; ], &quot;weight each&quot; : 1, &quot;magic&quot; : &quot;&quot;, &quot;notes&quot; : &quot;&quot;, &quot;cost&quot; : 1, &quot;damage&quot; : &quot;d4&quot; } }, &quot;name&quot; : &quot;Wigstan&quot;, &quot;stats&quot; : { &quot;dexterity&quot; : 15, &quot;charisma&quot; : 10, &quot;strength&quot; : 14, &quot;wisdom&quot; : 9, &quot;intelligence&quot; : 12, &quot;constitution&quot; : 14 } }
+{ &quot;_id&quot; : ObjectId(&quot;5605d765636c85fac5768a70&quot;), &quot;class&quot; : &quot;Fighter&quot;, &quot;role&quot; : &quot;Thane&quot;, &quot;level&quot; : 5, &quot;equipment&quot; : { &quot;bow&quot; : { &quot;quantity&quot; : 1, &quot;materials&quot; : [ &quot;wood&quot; ], &quot;weight each&quot; : 2, &quot;magic&quot; : &quot;&quot;, &quot;notes&quot; : &quot;&quot;, &quot;cost&quot; : 2, &quot;damage&quot; : &quot;d6&quot; }, &quot;Tent&quot; : { &quot;quantity&quot; : 1, &quot;materials&quot; : [ &quot;cloth&quot; ], &quot;weight each&quot; : 15, &quot;magic&quot; : &quot;&quot;, &quot;notes&quot; : &quot;sleeps 4&quot;, &quot;cost&quot; : 15 }, &quot;shield&quot; : { &quot;quantity&quot; : 1, &quot;materials&quot; : [ &quot;wood&quot;, &quot;cloth&quot; ], &quot;weight each&quot; : 10, &quot;magic&quot; : &quot;&quot;, &quot;notes&quot; : &quot;&quot;, &quot;cost&quot; : 10 }, &quot;arrows&quot; : { &quot;quantity&quot; : 12, &quot;materials&quot; : [ &quot;wood&quot;, &quot;iron&quot; ], &quot;weight each&quot; : 0.1, &quot;magic&quot; : &quot;&quot;, &quot;notes&quot; : &quot;&quot;, &quot;cost&quot; : 0.1 } }, &quot;name&quot; : &quot;Aelfryth&quot;, &quot;stats&quot; : { &quot;dexterity&quot; : 15, &quot;charisma&quot; : 14, &quot;strength&quot; : 16, &quot;wisdom&quot; : 14, &quot;intelligence&quot; : 11, &quot;constitution&quot; : 15 } }
+{ &quot;_id&quot; : ObjectId(&quot;5605d765636c85fac5768a71&quot;), &quot;class&quot; : &quot;Sourceror&quot;, &quot;role&quot; : &quot;Enigma&quot;, &quot;level&quot; : 5, &quot;equipment&quot; : { &quot;Unfailing Flint&quot; : { &quot;quantity&quot; : 1, &quot;materials&quot; : [ &quot;stone&quot; ], &quot;weight each&quot; : 0.1, &quot;magic&quot; : &quot;Y&quot;, &quot;notes&quot; : &quot;Immediately ignites in any weather&quot;, &quot;cost&quot; : 0.1 }, &quot;lamp&quot; : { &quot;quantity&quot; : 1, &quot;materials&quot; : [ &quot;clay&quot; ], &quot;weight each&quot; : 0.2, &quot;magic&quot; : &quot;&quot;, &quot;notes&quot; : &quot;&quot;, &quot;cost&quot; : 0.2 }, &quot;Oil of Revelation&quot; : { &quot;quantity&quot; : 1, &quot;materials&quot; : [ &quot;oil&quot;, &quot;spices&quot; ], &quot;weight each&quot; : 1, &quot;magic&quot; : &quot;Y&quot;, &quot;notes&quot; : &quot;Burned in any lamp, its light reveals all illusions, disguises, invisible&quot;, &quot;cost&quot; : 1 } }, &quot;name&quot; : &quot;Leofflaed&quot;, &quot;stats&quot; : { &quot;dexterity&quot; : 14, &quot;charisma&quot; : 11, &quot;strength&quot; : 8, &quot;wisdom&quot; : 11, &quot;intelligence&quot; : 17, &quot;constitution&quot; : 12 } }
+{ &quot;_id&quot; : ObjectId(&quot;5605d765636c85fac5768a72&quot;), &quot;class&quot; : &quot;Fighter&quot;, &quot;role&quot; : &quot;Warband Member&quot;, &quot;level&quot; : 4, &quot;equipment&quot; : { &quot;torches&quot; : { &quot;quantity&quot; : 6, &quot;materials&quot; : [ &quot;wood&quot; ], &quot;weight each&quot; : 2, &quot;magic&quot; : &quot;&quot;, &quot;notes&quot; : &quot;&quot;, &quot;cost&quot; : 2 }, &quot;30’ rope&quot; : { &quot;quantity&quot; : 1, &quot;materials&quot; : [ &quot;hemp&quot; ], &quot;weight each&quot; : 10, &quot;magic&quot; : &quot;&quot;, &quot;notes&quot; : &quot;&quot;, &quot;cost&quot; : 10 }, &quot;battleaxe&quot; : { &quot;quantity&quot; : 1, &quot;materials&quot; : [ &quot;wood&quot;, &quot;iron&quot; ], &quot;weight each&quot; : 7, &quot;magic&quot; : &quot;+1&quot;, &quot;notes&quot; : &quot;&quot;, &quot;cost&quot; : 7, &quot;damage&quot; : &quot;d8&quot; } }, &quot;name&quot; : &quot;Godric&quot;, &quot;stats&quot; : { &quot;dexterity&quot; : 11, &quot;charisma&quot; : 12, &quot;strength&quot; : 17, &quot;wisdom&quot; : 7, &quot;intelligence&quot; : 9, &quot;constitution&quot; : 16 } }
 bye
 </pre>
 </div>
@@ -1164,11 +1222,11 @@ bye
 
 </div>
 </div>
-</div><div class="fragment" data-fragment-index="26">
+</div><div class="fragment" data-fragment-index="28">
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[66]:</div>
+<div class="prompt input_prompt">In&nbsp;[31]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span class="o">!</span><span class="nb">echo</span> <span class="s2">&quot;db.party.find({class: &#39;Fighter&#39;}, {&#39;equipment&#39;: 1, _id: 0})&quot;</span> <span class="p">|</span> mongo
@@ -1197,11 +1255,11 @@ bye
 </div>
 
 </div>
-    </div><div class="fragment" data-fragment-index="27">
+    </div><div class="fragment" data-fragment-index="29">
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[65]:</div>
+<div class="prompt input_prompt">In&nbsp;[32]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span class="n">TODO</span><span class="p">:</span> <span class="n">finish</span> <span class="n">MongoDB</span> <span class="n">query</span>
@@ -1218,7 +1276,7 @@ bye
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_text output_error">
 <pre>
-<span class="ansicyan">  File </span><span class="ansigreen">&quot;&lt;ipython-input-65-ddb456e8d93c&gt;&quot;</span><span class="ansicyan">, line </span><span class="ansigreen">1</span>
+<span class="ansicyan">  File </span><span class="ansigreen">&quot;&lt;ipython-input-32-ddb456e8d93c&gt;&quot;</span><span class="ansicyan">, line </span><span class="ansigreen">1</span>
 <span class="ansired">    TODO: finish MongoDB query</span>
         ^
 <span class="ansired">SyntaxError</span><span class="ansired">:</span> invalid syntax
@@ -1274,7 +1332,8 @@ bye
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="DDL">DDL<a class="anchor-link" href="#DDL">&#182;</a></h1><p>Data Description Language</p>
+<h1 id="DDL">DDL<a class="anchor-link" href="#DDL">&#182;</a></h1><p>Data Definition Language</p>
+<p><img src="https://upload.wikimedia.org/wikipedia/en/0/09/PlayersHandbook8Cover.jpg" alt="AD&amp;D Players&#39; Handbook"></p>
 
 </div>
 </div>
@@ -1307,7 +1366,7 @@ You are now connected to database "dnd" as user "dungeonmaster".</code></pre>
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[33]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span class="o">!</span>cat sql/ddl/create_char_tbl.sql
@@ -1327,6 +1386,7 @@ You are now connected to database "dnd" as user "dungeonmaster".</code></pre>
     name TEXT,
     class TEXT,
     role TEXT,
+    level INTEGER,
     strength INTEGER,
     intelligence INTEGER,
     wisdom INTEGER,
@@ -1340,7 +1400,7 @@ You are now connected to database "dnd" as user "dungeonmaster".</code></pre>
 </div>
 </div>
 
-</div><div class="fragment" data-fragment-index="33">
+</div><div class="fragment" data-fragment-index="35">
     
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
@@ -1373,7 +1433,7 @@ CREATE TABLE</code></pre>
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="prompt input_prompt">In&nbsp;[34]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span class="o">!</span>cat sql/dml/ins_single_char.sql
@@ -1404,7 +1464,7 @@ VALUES (
 </div>
 </div>
 
-</div><div class="fragment" data-fragment-index="36">
+</div><div class="fragment" data-fragment-index="38">
     
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
@@ -1462,7 +1522,7 @@ COPY 4</code></pre>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="More-selective-SELECT">More selective SELECT<a class="anchor-link" href="#More-selective-SELECT">&#182;</a></h1>
+<h1 id="Selective-SELECT">Selective SELECT<a class="anchor-link" href="#Selective-SELECT">&#182;</a></h1>
 <pre><code>dnd=# SELECT name, class, role FROM character;
    name    |   class   |      role      
 -----------+-----------+----------------
@@ -1575,40 +1635,17 @@ dnd=# SELECT name, level FROM character;
 <h1 id="Unique-identifiers">Unique identifiers<a class="anchor-link" href="#Unique-identifiers">&#182;</a></h1>
 </div>
 </div>
-</div><div class="fragment" data-fragment-index="45">
+</div><div class="fragment" data-fragment-index="47">
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span class="o">!</span>cat sql/dml/wigmund.sql
 </pre></div>
 
 </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt"></div>
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>INSERT INTO character (
-  name, class, role, level,
-  strength, intelligence, wisdom, dexterity,
-  constitution, charisma)
-SELECT
-  &apos;Wigmund&apos;, class, role, level,
-  strength, intelligence, wisdom, dexterity,
-  constitution, charisma
-FROM character
-WHERE name = &apos;Wigstan&apos;;
-</pre>
-</div>
-</div>
-
 </div>
 </div>
 
@@ -1662,7 +1699,34 @@ dnd=# SELECT name, class, level FROM character WHERE class = 'Thief';
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Primary-Key">Primary Key<a class="anchor-link" href="#Primary-Key">&#182;</a></h1>
+<h1 id="Primary-Key">Primary Key<a class="anchor-link" href="#Primary-Key">&#182;</a></h1><h2 id="numeric">numeric<a class="anchor-link" href="#numeric">&#182;</a></h2>
+<pre><code>dnd=# ALTER TABLE character ADD
+dnd-#   id SERIAL PRIMARY KEY;
+
+dnd=# SELECT id, name, class, role FROM character;
+ id |   name    |   class   |      role      
+----+-----------+-----------+----------------
+  1 | Aelfryth  | Fighter   | Thane
+  2 | Godric    | Fighter   | Warband Member
+  3 | Leofflaed | Sourceror | Enigma
+  4 | Wigstan   | Thief     | Runaway Thrall
+  5 | Wigmund   | Thief     | Runaway Thrall
+
+dnd=# ALTER TABLE character DROP id;
+ALTER TABLE</code></pre>
+
+</div>
+</div>
+</div></section>
+    </section><section>
+    <section>
+    
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Text-PK">Text PK<a class="anchor-link" href="#Text-PK">&#182;</a></h2>
 <pre><code>dnd=# ALTER TABLE character
 dnd-# ADD PRIMARY KEY (name);
 ALTER TABLE</code></pre>
@@ -1675,7 +1739,7 @@ ALTER TABLE</code></pre>
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="prompt input_prompt">In&nbsp;[46]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span class="o">!</span>cat sql/dml/godric2.sql
@@ -1706,7 +1770,7 @@ VALUES (
 </div>
 </div>
 
-</div><div class="fragment" data-fragment-index="50">
+</div><div class="fragment" data-fragment-index="53">
     
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
@@ -1733,11 +1797,11 @@ DETAIL:  Key (name)=(Godric) already exists.</code></pre>
 <h1 id="Relations">Relations<a class="anchor-link" href="#Relations">&#182;</a></h1>
 </div>
 </div>
-</div><div class="fragment" data-fragment-index="52">
+</div><div class="fragment" data-fragment-index="55">
     
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span class="o">!</span>cat sql/ddl/create_equip_tbl.sql
@@ -1747,31 +1811,8 @@ DETAIL:  Key (name)=(Godric) already exists.</code></pre>
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt"></div>
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>  CREATE TABLE equipment (
-    name TEXT,
-    quantity INTEGER,
-    weight_each NUMERIC(4,1),
-    cost NUMERIC(6,2),
-    magic TEXT,
-    materials TEXT,
-    notes TEXT,
-    owner TEXT REFERENCES character (name)
-  );
-</pre>
 </div>
-</div>
-
-</div>
-</div>
-
-</div>
-    </div><div class="fragment" data-fragment-index="53">
+    </div><div class="fragment" data-fragment-index="56">
     
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
@@ -1799,7 +1840,7 @@ COPY 14</code></pre>
 <h1 id="Join">Join<a class="anchor-link" href="#Join">&#182;</a></h1>
 </div>
 </div>
-</div><div class="fragment" data-fragment-index="55">
+</div><div class="fragment" data-fragment-index="58">
     
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
@@ -1853,28 +1894,215 @@ dnd-# WHERE  class = 'Fighter';
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Transactions">Transactions<a class="anchor-link" href="#Transactions">&#182;</a></h1>
+<h1 id="Constraints">Constraints<a class="anchor-link" href="#Constraints">&#182;</a></h1><p><img src="img/chess.jpg" alt="Chess players"></p>
+
 </div>
 </div>
-</div><div class="fragment" data-fragment-index="58">
+</div></section>
+    </section><section>
+    <section>
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[37]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span class="o">!</span>cat sql/dml/mickey.sql
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>INSERT INTO character (
+  name, class, role, level,
+  psionic_level,
+  strength, intelligence, wisdom, dexterity,
+  constitution, charisma)
+VALUES (
+  &apos;Mickey&apos;, &apos;Druid/Gunslinger/Paladin/Illusionist/Assassin&apos;, &apos;Demigod&apos;, 87,
+  19,
+  19, 19, 18, 18,
+  19, 17);
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div><div class="fragment" data-fragment-index="62">
     
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Let's give poor Wigmund some equipment.</p>
 
-<pre><code>dnd=# UPDATE equipment
-dnd-# SET    owner = 'Wigmund'
-dnd-# WHERE  owner = 'Wigstan'
-dnd-# AND    name = 'cudgel';
-UPDATE 1</code></pre>
+<pre><code>ERROR:  column "psionic_level" of relation "character" does not exist
+LINE 3:   psionic_level,</code></pre>
 
 </div>
 </div>
 </div>
     </div></section>
+    </section><section>
+    <section>
+    
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Column-constraints">Column constraints<a class="anchor-link" href="#Column-constraints">&#182;</a></h1>
+<pre><code>  CREATE TABLE character (
+    name TEXT,
+    class VARCHAR(14),
+    ...
+
+dnd=# ALTER TABLE character ALTER COLUMN class TYPE VARCHAR(14);
+
+INSERT INTO character (
+...
+
+ERROR:  value too long for type character varying(14)</code></pre>
+
+</div>
+</div>
+</div></section>
+    </section><section>
+    <section>
+    
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Foreign-key-constraints">Foreign key constraints<a class="anchor-link" href="#Foreign-key-constraints">&#182;</a></h1>
+</div>
+</div>
+</div></section>
+    </section><section>
+    <section>
+    
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Check-constraints">Check constraints<a class="anchor-link" href="#Check-constraints">&#182;</a></h1>
+<pre><code>  CREATE TABLE character (
+    ...
+    level INTEGER,
+    ...
+
+  dnd=# ALTER TABLE character ADD CONSTRAINT reaonable_level CHECK (level &lt; 15);
+
+ERROR:  new row for relation "character" violates check constraint "character_level_check"
+DETAIL:  Failing row contains (Mickey, Druid, Demigod, 87, 19, 19, 18, 18, 19, 17).        </code></pre>
+
+</div>
+</div>
+</div></section>
+    </section><section>
+    <section>
+    
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Transactions">Transactions<a class="anchor-link" href="#Transactions">&#182;</a></h1><p><img src="img/transaction.jpg" alt="transaction"></p>
+
+</div>
+</div>
+</div></section>
+    </section><section>
+    <section>
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[42]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span class="o">!</span>cat sql/dml/thief_inventories.sql
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>SELECT name, owner
+FROM   equipment
+WHERE  owner LIKE &apos;Wig%&apos;;
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div><div class="fragment" data-fragment-index="68">
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span class="n">dnd</span><span class="o">=</span><span class="c"># \i sql/dml/thief_inventories.sql</span>
+  <span class="n">name</span>   <span class="o">|</span>  <span class="n">owner</span>  
+<span class="o">---------+---------</span>
+ <span class="n">cudgel</span>  <span class="o">|</span> <span class="n">Wigstan</span>
+ <span class="n">cookpot</span> <span class="o">|</span> <span class="n">Wigstan</span>
+ <span class="n">dagger</span>  <span class="o">|</span> <span class="n">Wigstan</span>
+ <span class="n">torches</span> <span class="o">|</span> <span class="n">Wigstan</span>
+<span class="p">(</span><span class="mi">4</span> <span class="n">rows</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+    </div></section>
+    </section><section>
+    <section>
+    
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+
+<pre><code>dnd=# UPDATE equipment
+dnd-# SET    owner = 'Wigmund'
+dnd-# WHERE  owner = 'Wigstan'
+dnd-# AND    name = 'cudgel';
+UPDATE 1
+dnd=# \i sql/dml/thief_inventories.sql 
+  name   |  owner  
+---------+---------
+ cookpot | Wigstan
+ dagger  | Wigstan
+ torches | Wigstan
+ cudgel  | Wigmund
+(4 rows)</code></pre>
+
+</div>
+</div>
+</div></section>
     </section><section>
     <section>
     
@@ -1925,7 +2153,10 @@ dnd-# WHERE  owner LIKE 'Wig%';
  torches | Wigstan
  dagger  | Wigstan
  cudgel  | Wigmund
-(4 rows)</code></pre>
+(4 rows)
+
+</code></pre>
+<p>opposite is <code>COMMIT</code></p>
 
 </div>
 </div>
@@ -1961,7 +2192,10 @@ dnd=# </code></pre>
   14
 (1 row)
 
-dnd=# SELECT name, MAX(charisma) FROM character;
+</code></pre>
+<p>Think line count</p>
+
+<pre><code>dnd=# SELECT name, MAX(charisma) FROM character;
 ERROR:  column "character.name" must appear in the GROUP BY clause or be used in an aggregate function
 LINE 1: SELECT name, MAX(charisma) FROM character;</code></pre>
 
@@ -2036,7 +2270,10 @@ dnd-# ORDER BY SUM(e.cost) DESC;
 
 </div>
 </div>
-</div>
+</div></section>
+    </section><section>
+    <section>
+    
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
@@ -2062,6 +2299,16 @@ ORDER BY SUM(e.cost) DESC;
 
 </div>
 </div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Traps">Traps<a class="anchor-link" href="#Traps">&#182;</a></h1><p><img src="img/grimtooth.jpg" alt="trap book"></p>
+
+</div>
+</div>
 </div></section>
     </section><section>
     <section>
@@ -2071,7 +2318,7 @@ ORDER BY SUM(e.cost) DESC;
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Traps">Traps<a class="anchor-link" href="#Traps">&#182;</a></h1><h2 id="The-NULL-trap-(3-value-logic)">The NULL trap (3-value logic)<a class="anchor-link" href="#The-NULL-trap-(3-value-logic)">&#182;</a></h2>
+<h1 id="The-NULL-trap-(3-value-logic)">The NULL trap (3-value logic)<a class="anchor-link" href="#The-NULL-trap-(3-value-logic)">&#182;</a></h1>
 <pre><code>dnd=# SELECT name, magic 
 dnd-# FROM   equipment
 dnd-# WHERE  magic IS NOT NULL;
@@ -2143,7 +2390,23 @@ dnd-# JOIN   equipment e ON (e.owner = c.name)
 dnd-# AND    e.magic != NULL;
  name 
 ------
-(0 rows)</code></pre>
+(0 rows)
+
+dnd=# SELECT c.name AS owner, e.name                                                           dnd=# FROM   character c                                                                       dnd=# JOIN   equipment e ON (c.name = e.owner)                                                 dnd=# WHERE  magic IS NULL;
+   owner   |   name   
+-----------+----------
+ Aelfryth  | shield
+ Aelfryth  | Tent
+ Aelfryth  | bow
+ Aelfryth  | arrows
+ Godric    | 30’ rope
+ Godric    | torches
+ Leofflaed | lamp
+ Wigstan   | cookpot
+ Wigstan   | torches
+ Wigstan   | dagger
+ Wigmund   | cudgel
+(11 rows)</code></pre>
 
 </div>
 </div>
@@ -2205,8 +2468,7 @@ dnd-# FROM   character;
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Unqualified <code>DELETE</code> = apocalypse</p>
-
+<h2 id="Unqualified-DELETE-=-apocalypse">Unqualified <code>DELETE</code> = apocalypse<a class="anchor-link" href="#Unqualified-DELETE-=-apocalypse">&#182;</a></h2>
 <pre><code>dnd=# BEGIN TRANSACTION;
 BEGIN
 dnd=# DELETE FROM equipment;
@@ -2230,9 +2492,43 @@ ROLLBACK</code></pre>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Tools">Tools<a class="anchor-link" href="#Tools">&#182;</a></h1><ul>
+<li><p><a href="https://wiki.postgresql.org/wiki/Community_Guide_to_PostgreSQL_GUI_Tools">GUIs</a></p>
+</li>
+<li><p><a href="http://www.postgresqlstudio.org/">Web interfaces</a></p>
+</li>
+<li><p>Automatic APIs: <a href="http://htsql.org/">HTSQL</a>, <a href="https://github.com/begriffs/postgrest">Postgrest</a>...</p>
+</li>
+</ul>
+
+</div>
+</div>
+</div></section>
+    </section><section>
+    <section>
+    
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Triggers">Triggers<a class="anchor-link" href="#Triggers">&#182;</a></h1><p><img src="img/crossbow2.jpg" alt="woman with crossbow"></p>
+
+</div>
+</div>
+</div></section>
+    </section><section>
+    <section>
+    
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Take-500-XP">Take 500 XP<a class="anchor-link" href="#Take-500-XP">&#182;</a></h1><p>Questions?</p>
 <p>catherinedevlin.blogspot.com
 <a href="https://github.com/catherinedevlin/sql_quest">github.com/catherinedevlin/sql_quest</a></p>
+<p>Images (except book covers) from <a href="https://www.flickr.com/photos/britishlibrary">British Library's public release</a></p>
 
 </div>
 </div>
